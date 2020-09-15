@@ -7,7 +7,7 @@ import {ICartProduct} from '../../../../../shared/mocks/1-components/cart-produc
 })
 
 export class ShopCardComponent {
-  @Input() public product: ICartProduct;
+  @Input() product: ICartProduct = {} as ICartProduct;
   @Output() public increment: EventEmitter<any> = new EventEmitter<any>();
   @Output() public decrement: EventEmitter<any> = new EventEmitter<any>();
 
